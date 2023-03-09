@@ -10,6 +10,6 @@ print("IP: " + str(conn.getresponse().read()))
 #print("IP: " + socket.gethostbyname(socket.gethostname()))
 
 s=socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-s.connect(('8.8.8.8', 80))
+s.connect(('77.88.8.8', 80))
 print("IP: " + s.getsockname()[0])
 print(":".join(re.findall('..', '%012x' % uuid.getnode())))
