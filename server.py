@@ -37,6 +37,13 @@ def listen_for_client(cs):
             # token with ": " for nice printing
             msg = msg.replace(separator_token, ": ")
         # iterate over all connected sockets
+        
+        q=""
+        for lit in range(5, len(msg)):
+            if(lit<=len(msg)-6):
+                q+=msg[lit]     
+        print(q)
+
         for client_socket in client_sockets:
             # and send the message
             client_socket.send(msg.encode())
