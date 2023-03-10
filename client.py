@@ -1,6 +1,6 @@
 import socket
 
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 s.connect(('77.88.8.8', 80))
 
 connection = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
